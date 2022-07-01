@@ -1,6 +1,6 @@
-import type { FastifyInstance } from 'fastify'
+import type { FastifyPluginAsync } from 'fastify'
 
-export async function routes(fastify: FastifyInstance) {
+export const routes: FastifyPluginAsync = async (fastify) => {
   fastify.get('/', async () => {
     return { hello: 'world' }
   })
