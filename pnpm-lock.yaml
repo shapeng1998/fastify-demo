@@ -9,6 +9,7 @@ specifiers:
   eslint: ^8.20.0
   express: ^4.18.1
   fastify: ^4.3.0
+  fastify-decorators: ^3.12.0
   ora: ^6.1.2
   prettier: ^2.7.1
   tsx: ^3.8.0
@@ -16,6 +17,7 @@ specifiers:
 
 dependencies:
   fastify: 4.3.0
+  fastify-decorators: 3.12.0_kiesm2zuqchavy32pkqja5v7fm
   ora: 6.1.2
 
 devDependencies:
@@ -343,7 +345,6 @@ packages:
 
   /@types/node/18.6.0:
     resolution: {integrity: sha512-WZ/6I1GL0DNAo4bb01lGGKTHH8BHJyECepf11kWONg3OJoHq2WYOm16Es1V54Er7NTUXsbDCpKRKdmBc4X2xhA==}
-    dev: true
 
   /@types/qs/6.9.7:
     resolution: {integrity: sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==}
@@ -1839,6 +1840,22 @@ packages:
 
   /fast-uri/2.1.0:
     resolution: {integrity: sha512-qKRta6N7BWEFVlyonVY/V+BMLgFqktCUV0QjT259ekAIlbVrMaFnFLxJ4s/JPl4tou56S1BzPufI60bLe29fHA==}
+    dev: false
+
+  /fastify-decorators/3.12.0_kiesm2zuqchavy32pkqja5v7fm:
+    resolution: {integrity: sha512-Tss32tGkqdnmubDkuDm5W+axdYokyQqH8wEqAI9xFMYmf56eXnzRzxplM6zLJpiuQ8DZRr3k8EEUWR/OeW8jTQ==}
+    engines: {node: '>= 10.16.0'}
+    peerDependencies:
+      '@types/node': '*'
+      fastify: ^3.0.1 || ^4.0.0
+    dependencies:
+      '@types/node': 18.6.0
+      fastify: 4.3.0
+      fastify-plugin: 3.0.1
+    dev: false
+
+  /fastify-plugin/3.0.1:
+    resolution: {integrity: sha512-qKcDXmuZadJqdTm6vlCqioEbyewF60b/0LOFCcYN1B6BIZGlYJumWWOYs70SFYLDAH4YqdE1cxH/RKMG7rFxgA==}
     dev: false
 
   /fastify/4.3.0:

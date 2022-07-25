@@ -1,9 +1,12 @@
 import Fastify from 'fastify'
-import { routes } from './route'
+import { bootstrap } from 'fastify-decorators'
 
 const fastify = Fastify({ logger: true })
 
-fastify.register(routes)
+fastify.register(bootstrap, {
+  directory: new URL('controller', import.meta.url),
+  mask: /\.controller\./,
+})
 
 const start = async () => {
   try {

@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "fastify": "^4.3.0",
+    "fastify-decorators": "^3.12.0",
     "ora": "^6.1.2"
   },
   "devDependencies": {
